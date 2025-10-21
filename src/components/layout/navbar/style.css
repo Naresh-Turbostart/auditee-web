@@ -1,0 +1,115 @@
+.navbar-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 10000;
+}
+@media (max-width: 1024px) {
+  .navbar-shadow {
+    box-shadow: none;
+  }
+}
+/* 
+.triangle-right {
+  background: linear-gradient(-135deg, currentColor 50%, transparent 50%) 50% /
+    50% 50% no-repeat;
+} */
+.bottom-left-triangle2 {
+  width: 100%;
+
+  border-right: 50px solid transparent;
+  border-bottom: 93px solid #535458;
+}
+.bottom-left-triangle {
+  width: calc(100% - 3px);
+
+  border-right: 49px solid transparent;
+  border-bottom: 91px solid #010101;
+}
+
+.top-right-triangle2 {
+  width: 100%;
+  height: 0;
+  border-top: 93px solid #535458;
+  border-left: 51px solid transparent;
+}
+.top-right-triangle {
+  width: calc(100% - 3px);
+  height: 0;
+  border-top: 91px solid #010101;
+  border-left: 50px solid transparent;
+}
+.drop-down2 {
+  width: 100%;
+  height: 0;
+  border-top: 537px solid #535458;
+  border-left: 295px solid transparent;
+}
+.drop-down {
+  width: calc(100% - 3px);
+  height: 0;
+  border-top: 535px solid #010101;
+  border-left: 294px solid transparent;
+}
+
+@media (max-width: 1535px) {
+  .drop-down2 {
+    width: 100%;
+    height: 0;
+    border-top: 402px solid #535458;
+    border-left: 221px solid transparent;
+  }
+  .drop-down {
+    width: calc(100% - 3px);
+    height: 0;
+    border-top: 400px solid #010101;
+    border-left: 220px solid transparent;
+  }
+}
+@media (max-width: 1280px) {
+  .drop-down2 {
+    width: 100%;
+    height: 0;
+    border-top: 512px solid #535458;
+    border-left: 281px solid transparent;
+  }
+  .drop-down {
+    width: calc(100% - 3px);
+    height: 0;
+    border-top: 510px solid #010101;
+    border-left: 280px solid transparent;
+  }
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 40s linear infinite;
+}
+
+.team.animate-infinite-scroll {
+  animation: infinite-scroll 20s linear infinite;
+  animation-play-state: running; 
+}
+
+.team.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+.scroll-list {
+  display: flex;                
+  flex-wrap: nowrap;           
+  overflow: hidden;            
+}
+
+.logo-item {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+}
+
