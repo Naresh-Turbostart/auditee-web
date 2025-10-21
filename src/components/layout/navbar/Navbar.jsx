@@ -49,15 +49,15 @@ const Navbar = () => {
   const navPillClasses = (isActive) =>
     `flex items-center gap-2 font-medium text-base px-4 py-2 rounded-full transition-all duration-200 border ${
       isActive
-        ? "bg-[#E9EEFF] border-[#C5D5FF] text-[#1F3FD5] shadow-[0_8px_20px_rgba(95,131,255,0.18)]"
+        ? "bg-[#E9EEFF] border-[#C5D5FF] text-[#1F3FD5] "
         : "border-transparent text-gray-700 hover:text-[#4169E1] hover:border-[#D7E1FF] hover:bg-[#F4F7FF]"
     }`;
 
   const navBulletClasses = (isActive) =>
     `w-2.5 h-2.5 rounded-full flex-shrink-0 transition-all duration-200 ${
       isActive
-        ? "opacity-100 bg-gradient-to-b from-[#80A2FF] to-[#1446CC] shadow-[0_0_0_4px_rgba(80,126,255,0.18)]"
-        : "opacity-0 bg-transparent shadow-none"
+        ? "opacity-100 bg-gradient-to-b from-[#80A2FF] to-[#1446CC] "
+        : "opacity-0 bg-transparent "
     }`;
 
   const closeAll = () => {
