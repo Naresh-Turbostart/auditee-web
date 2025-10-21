@@ -157,7 +157,7 @@ const MethodologyCard = React.memo(({ item, bgStyle, index }) => {
 
       <div className="relative z-10 flex flex-col justify-end h-full">
         <div className="pt-6">
-          <h3 className="text-black text-lg sm:text-xl md:text-2xl font-semibold tracking-tight">
+          <h3 className="text-black text-base sm:text-lg md:text-xl tracking-normal font-medium ">
             {item.title}
           </h3>
           {item.subtitle && (

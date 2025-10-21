@@ -158,9 +158,9 @@ const FeatureCard = React.memo(
       >
         <MediaLayer media={media} animation={animationContent} />
         <div className="text-left">
-          <h5 className="mb-2 text-2xl gradient-text font-semibold ">
+          <h3 className="mb-2  gradient-text text-base sm:text-lg md:text-xl tracking-normal font-medium">
             {title}
-          </h5>
+          </h3>
           <p className="text-[#414141]">{description}</p>
         </div>
       </article>
